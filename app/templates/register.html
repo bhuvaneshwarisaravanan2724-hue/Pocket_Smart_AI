@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}
+Create Account - Pocket Smart AI
+{% endblock %}
+
+{% block content %}
+
+<div class="auth-page">
+
+    <div class="auth-card">
+
+        <div class="brand">
+            <div class="brand-icon">💰</div>
+            <h1>PocketSmart</h1>
+            <p>AI-Powered Budget Planning</p>
+        </div>
+
+        <h2>Create Your Account</h2>
+        <p class="auth-subtitle">
+            Start managing your money smarter
+        </p>
+
+        <form action="/auth/register" method="post">
+
+            <label>Username</label>
+            <input
+                type="text"
+                name="username"
+                placeholder="Enter your username"
+                required
+            >
+
+            <label>Email</label>
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Password</label>
+            <input
+                type="password"
+                name="password"
+                placeholder="Create a password"
+                required
+            >
+            
+            <label>Confirm Password</label>
+            <input
+                type="password"
+                name="confirm_password"
+                placeholder="Confirm your password"
+                required
+>
+
+            <button type="submit">
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="login-link">
+            Already have an account?
+            <a href="/login">Login</a>
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

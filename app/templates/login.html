@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}
+Login - Pocket Smart AI
+{% endblock %}
+
+{% block content %}
+
+<div class="auth-page">
+
+    <div class="auth-card">
+
+        <div class="brand">
+            <div class="brand-icon">💰</div>
+            <h1>PocketSmart</h1>
+            <p>AI-Powered Budget Planning</p>
+        </div>
+
+        <h2>Welcome Back</h2>
+
+        <p class="auth-subtitle">
+            Login to manage your budget smarter
+        </p>
+
+        <form action="/auth/login" method="post">
+
+            <label>Email</label>
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Password</label>
+            <input
+                type="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <p class="login-link">
+            Don't have an account?
+            <a href="/register">Create Account</a>
+        </p>
+
+    </div>
+
+</div>
+
+{% endblock %}

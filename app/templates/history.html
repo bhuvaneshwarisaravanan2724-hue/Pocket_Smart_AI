@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block title %}
+History - Pocket Smart AI
+{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-page">
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-header">
+            <div>
+                <h1>💰 PocketSmart</h1>
+                <p>AI-Powered Budget Planning</p>
+            </div>
+
+            <a href="/dashboard" class="logout-link">
+                Dashboard
+            </a>
+        </div>
+
+        <div class="welcome-section">
+            <h2>📜 Budget History</h2>
+            <p>View your previously recorded expenses and spending activity.</p>
+        </div>
+
+        <div class="dashboard-card">
+
+            <h3>💸 Expense History</h3>
+
+            {% if expenses|length>0%}
+
+                {% for expense in expenses %}
+
+                <div class="history-item">
+
+                    <div>
+                        <strong>{{ expense.category }}</strong>
+                        <p>{{ expense.description or "No description" }}</p>
+                    </div>
+
+                    <div>
+                        <strong>₹{{ "%.2f"|format(expense.amount) }}</strong>
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            {% else %}
+
+                <p>No expense history available yet.</p>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

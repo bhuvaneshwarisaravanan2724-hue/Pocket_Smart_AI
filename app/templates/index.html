@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}
+Pocket Smart AI
+{% endblock %}
+
+{% block content %}
+
+<h1>🤖 Pocket Smart AI</h1>
+
+<p>Your Smart Budget & Recommendations Assistant</p>
+
+<h2>Welcome to Pocket Smart AI 💰</h2>
+
+<div>
+    <h3>💰 Budget</h3>
+    <p>Manage your budget.</p>
+    <a href="/expenses/budget?income=10000">Open</a>
+</div>
+
+<div>
+    <h3>📊 Expenses</h3>
+    <p>Track your expenses.</p>
+    <a href="/expenses/">Open</a>
+</div>
+
+<div>
+    <h3>🤖 AI</h3>
+    <p>Get smart recommendations.</p>
+    <a href="/expenses/recommendation?income=10000">Open</a>
+</div>
+
+<div>
+    <h3>🏠 Home Planner</h3>
+    <p>Plan your home needs.</p>
+    <a href="/planners/home">Open</a>
+</div>
+
+<div>
+    <h3>🎉 Party Planner</h3>
+    <p>Plan your party.</p>
+    <a href="/planners/party">Open</a>
+</div>
+
+<div>
+    <h3>💎 Jewelry Planner</h3>
+    <p>Plan your jewelry purchase.</p>
+    <a href="/planners/jewelry">Open</a>
+</div>
+
+{% endblock %}

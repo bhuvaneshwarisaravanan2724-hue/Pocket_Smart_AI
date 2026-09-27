@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}
+Party Planner - Pocket Smart AI
+{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-page">
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-header">
+            <div>
+                <h1>💰 PocketSmart</h1>
+                <p>AI-Powered Budget Planning</p>
+            </div>
+
+            <a href="/dashboard" class="logout-link">
+                Dashboard
+            </a>
+        </div>
+
+        <div class="welcome-section">
+            <h2>🎉 Party Planner</h2>
+            <p>Plan your party while staying within your budget.</p>
+        </div>
+
+        <div class="dashboard-grid">
+
+            <div class="dashboard-card">
+                <div class="card-icon">🍽️</div>
+                <h3>Food & Drinks</h3>
+                <p>
+                    Plan food and refreshments according to
+                    your guest count and available budget.
+                </p>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon">🎈</div>
+                <h3>Decorations</h3>
+                <p>
+                    Plan decorations and party supplies
+                    without unnecessary spending.
+                </p>
+            </div>
+
+            <div class="dashboard-card">
+                <div class="card-icon">🎁</div>
+                <h3>Gifts & Supplies</h3>
+                <p>
+                    Keep track of gifts, invitations and
+                    other important party requirements.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="dashboard-card" style="margin-top: 25px;">
+
+            <h3>💡 Smart Party Tip</h3>
+
+            <p>
+                Set your total party budget first, then divide
+                it between food, decorations and other essentials.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

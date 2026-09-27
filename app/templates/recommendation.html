@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}
+AI Recommendation - Pocket Smart AI
+{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-page">
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-header">
+            <div>
+                <h1>💰 PocketSmart</h1>
+                <p>AI-Powered Budget Planning</p>
+            </div>
+
+            <a href="/dashboard" class="logout-link">
+                Dashboard
+            </a>
+        </div>
+
+        <div class="welcome-section">
+            <h2>🤖 AI Budget Recommendation</h2>
+            <p>Get a smart recommendation based on your spending.</p>
+        </div>
+
+        <div class="dashboard-card">
+
+            <h3>💡 Your AI Recommendation</h3>
+            
+            <div class="recommendation-text">
+    {{ recommendation }}
+</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
